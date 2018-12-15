@@ -8,7 +8,7 @@ what I have reached for now is somthing like below
 ```Go
 alexa := alexa.New()
 alexa.AddIntentResponse("INTNET-NAME", HandlerFunc)
-// run the http server on speicific port
+// run the http server on specific port
 alexa.Run("3000")
 ```
 
@@ -18,7 +18,7 @@ I used Gin framework to run the http server, probably I will use native net/http
 # How it works
 alot of web/video tutorials using only aws-lambda which is an easy way to build serverless apps, but I wanted to build it on my own server.
 
-So this SDK handles all what you need to serve alexa skill, it will handle the operations to deal with alexa and you should only focse on your skill.
+So this SDK handles all what you need to serve alexa skill, it will handle the operations to deal with alexa and you should only fouce on your skill.
 
 ## Create Alexa instances
 

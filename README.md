@@ -38,7 +38,6 @@ the handler accepts alexa.Request object and should return instance of StringPay
 alexa.AddIntentResponse("WhatIsYourNameIntent",whatIsYourNameAlexaHandler)
 
 func whatIsYourNameAlexaHandler(request alexa.Request) alexa.StringPayload {
-    var payload alexa.StringPayload
     return alexa.StringPayload{
 		Title: "ask for user name",
 		Text:  "What is your name ?",
@@ -54,7 +53,6 @@ func ResponseToAnswerWhatIsYourName(request alexa.Request) alexa.StringPayload {
     slots := request.Body.Intent.Slots
 	name := slots["name"]
 
-    var payload alexa.StringPayload
     return alexa.StringPayload{
 		Title: "hello name",
 		Text:  fmt.Sprintf("Hello %s", name.Value),
